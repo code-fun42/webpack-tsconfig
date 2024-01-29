@@ -25,10 +25,4 @@ function App() {
    );
 }
 
-// {isAbout ?
-// <Suspense fallback={<div>Loading...</div>}>
-//     <Modal/>
-// </Suspense> : null
-// }
-
 export default App;

@@ -1,8 +1,6 @@
 import path from "node:path";
 
-import webpack from "webpack";
-
-import {Configuration as WebpackConfiguration} from "webpack";
+import webpack, {Configuration as WebpackConfiguration} from "webpack";
 import {Configuration as DevServerConfiguration} from "webpack-dev-server";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
@@ -36,12 +34,7 @@ const config: WebpackConfiguration = {
    ],
 
    resolve: {
-      extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
-
-      // alias: {
-      //    "@layouts": path.resolve(__dirname, "src", "layouts") ,
-      //    "@pages": path.resolve(__dirname, "src", "pages") ,
-      // },
+      extensions: [".tsx", ".ts", ".js"],
 
       plugins: [
          new TsconfigPathsPlugin({
@@ -58,7 +51,6 @@ const config: WebpackConfiguration = {
             loader: "ts-loader",
             options: {
                transpileOnly: true,
-               configFile: "tsconfig.json",
             }
          },
 
