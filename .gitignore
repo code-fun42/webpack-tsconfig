@@ -1,0 +1,10 @@
+/.idea
+
+/dist
+
+/vendor
+
+node_modules
+
+# Yarn
+.yarn/install-state.gz
