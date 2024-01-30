@@ -5,8 +5,8 @@
   "license": "MIT",
   "packageManager": "yarn@4.0.0",
   "scripts": {
-    "build": "TS_NODE_PROJECT=\"tsconfig.webpack.config.json\" webpack",
-    "serve": "TS_NODE_PROJECT=\"tsconfig.webpack.config.json\" webpack serve"
+    "build": "TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",
+    "serve": "TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack serve"
   },
   "devDependencies": {
     "@types/node": "^20.11.9",
