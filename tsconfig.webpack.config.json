@@ -2,8 +2,10 @@
   "compilerOptions": {
     "module": "CommonJS",
     "moduleResolution": "NodeNext",
-    "target": "ES2022",
+    "target": "ESNext",
     "esModuleInterop": true,
+    "outDir": "ts_node",
+    "jsx": "react",
     "paths": {
       "@pages/*": [
         "./src/pages/*"

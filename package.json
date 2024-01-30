@@ -1,7 +1,7 @@
 {
   "name": "webpack-tsconfig",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/index.tsx",
   "license": "MIT",
   "packageManager": "yarn@4.0.0",
   "scripts": {

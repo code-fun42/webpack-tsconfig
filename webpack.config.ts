@@ -4,7 +4,7 @@ import webpack, {Configuration as WebpackConfiguration} from "webpack";
 import {Configuration as DevServerConfiguration} from "webpack-dev-server";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import {TsconfigPathsPlugin} from "tsconfig-paths-webpack-plugin";
+import TsconfigPathsPlugin from "tsconfig-paths-webpack-plugin";
 
 const devServer: DevServerConfiguration = {
    historyApiFallback: true,
@@ -17,6 +17,8 @@ const config: WebpackConfiguration = {
    mode: "development",
 
    entry: "./src/index.tsx",
+
+   // target: ["web", "es2022"],
 
    devServer,
 
@@ -36,8 +38,15 @@ const config: WebpackConfiguration = {
    resolve: {
       extensions: [".tsx", ".ts", ".js"],
 
+      // так будет работать
+      // alias: {
+      //    "@pages": path.resolve(__dirname, "src", "pages"),
+      //    "@layouts": path.resolve(__dirname, "src", "layouts"),
+      // },
+
       plugins: [
          new TsconfigPathsPlugin({
+            extensions: [".tsx", ".ts", ".js"],
             configFile: path.resolve(__dirname, "tsconfig.json"),
          }),
       ]
