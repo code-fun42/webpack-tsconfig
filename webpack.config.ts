@@ -18,8 +18,6 @@ const config: WebpackConfiguration = {
 
    entry: "./src/index.tsx",
 
-   // target: ["web", "es2022"],
-
    devServer,
 
    output: {
