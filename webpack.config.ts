@@ -36,6 +36,8 @@ const config: WebpackConfiguration = {
    resolve: {
       extensions: [".tsx", ".ts", ".js"],
 
+      modules: [path.resolve(__dirname, 'node_modules')],
+
       // так будет работать
       // alias: {
       //    "@pages": path.resolve(__dirname, "src", "pages"),
